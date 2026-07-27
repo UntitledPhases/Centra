@@ -1,0 +1,15 @@
+[project]
+name = "centra-orchestrator"
+version = "0.1.0"
+description = "Orchestration kernel — slice 1: persistence and guardrail foundation"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov"]
+
+[tool.pytest.ini_options]
+testpaths = ["orchestrator/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
